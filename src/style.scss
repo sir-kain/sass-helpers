@@ -1,3 +1,6 @@
+@import './scss/variables.scss';
+@import './scss/mixins.scss';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -5,4 +8,11 @@
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background: green;
+  @include tablet {
+    background: yellow;
+  }
+  @include desktop {
+    background: red;
+  }
 }
