@@ -1,18 +1,26 @@
+@import './scss/base.css';
 @import './scss/variables.scss';
 @import './scss/mixins.scss';
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-  background: green;
+body {
+  background: rgb(129, 240, 129);
   @include tablet {
-    background: yellow;
+    background: rgb(228, 228, 144);
   }
   @include desktop {
-    background: red;
+    background: rgb(226, 104, 104);
   }
 }
+
+
+///
+// Calculates the rem value for the given number of pixels.
+//
+// @function rem($px) {
+//   @if (unit($px) == "rem") {
+//       @return $px;
+//   }
+
+//   @return ($px / $zss--base-font-size) * 1rem;
+// }
+
